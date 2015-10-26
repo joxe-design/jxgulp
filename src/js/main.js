@@ -1,2 +1,2 @@
-console.log('Primary file reporting in!');
-document.querySelector('h2').innerHTML = 'JAVASCRIPT changed this!!';
+console.log('Archivo main.js informando!!');
+document.querySelector('h2').innerHTML = 'JavaScript cambió esto !!';

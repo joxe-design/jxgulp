@@ -1,15 +1,10 @@
-# This Repo is depreciated
-**This repo is no longer being maintained.  Please use build "[SuperCell](https://github.com/joellongie/SuperCell)".**
+# Joxe Gulp Starter 0.1
 
-# JL Gulp Starter 0.2
+jxGulp starter es mi Work Environment (Entorno de trabajo) con Gulp, Node, Sass, SourceMaps, Browser-Sync, Autoprefixer y Uglify / Concat basado en jlGulp de <a href:"http://joellongie.com">Joel Longie</a>
 
-jlGulp starter is my former front-end framework using Gulp, Node, Sass, Susy, Breakpoint, SourceMaps, Browser-Sync, Autoprefixer and Uglify / Concat. This is a complete rewrite from version 0.1.
+## Instalar Paquetes
 
-**Prior Ruby and Compass dependency have been removed and no longer required the use of any Ruby.**
-
-## Install Packages
-
-After cloning the project to your computer run the following command in your terminal to install all required node and bower packages.
+Después de la clonación del proyecto para el equipo ejecute el siguiente comando en su terminal para instalar todos los paquetes de nodo y Bower requeridos.
 
 	1.  sudo npm install && bower install
 
@@ -18,22 +13,22 @@ After cloning the project to your computer run the following command in your ter
 
 	gulp
 
-## Build
+## Dist
 
-Create a deployment build with the following commands:
+Crea una carpeta de distribución con el siguiente comando:
 
-	gulp build
+	gulp dist
 
-## Test App Build
+## Testear la distribución
 
-To fire up a server and test the final build:
+Servidor de prueba para la versión final que se subirá al servidor definitivo:
 
-	gulp build:serve
+	gulp dist:test
 
 ---------------------------------------
 
 ## gulpfile.js
-Javascript concatenation is done in the config object in the guilpfile.  This controls the order as well as files to be be concatenated.  I went with a simple system in anticipation of ES6 built-in modules.  The config object also controls which files are EXCLUDED from the final build.
+Concatenación Javascript se realiza en el objeto de configuración en el guilpfile. Este controla el orden, así como archivos que se pueden concatenar. Fui con un sistema simple en previsión de ES6 módulos integrados. El objeto de configuración también controla qué archivos se excluyen de la versión final.
 
 ## .bowerrc
-Controls the location where bower packages will be installed.
+Controla la ubicación donde se instalarán los paquetes de Bower.

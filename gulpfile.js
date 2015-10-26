@@ -53,13 +53,13 @@ function errorlog(err){
 // Scripts Task
 // ///////////////////////////////////////////////
 
-gulp.task('scripts', function () {
-    return gulp.src(config.jsConcatFiles)
-    .pipe(sourcemaps.init())
-    .pipe(concat('temp.js'))
-    .pipe(uglify())
-    .on('error', errorlog)
-    .pipe(rename('src.min.js'))
+gulp.task('scripts', function() {
+  return gulp.src(config.jsConcatFiles)
+	.pipe(sourcemaps.init())
+		.pipe(concat('temp.js'))
+		.pipe(uglify())
+		.on('error', errorlog)
+		.pipe(rename('src.min.js'))
     .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('./src/js/'))
 

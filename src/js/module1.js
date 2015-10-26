@@ -1,1 +1,1 @@
-console.log('Module 1 reporting in!');
+console.log('Module1.js informando!');
